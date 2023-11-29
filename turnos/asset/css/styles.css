@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #4e3cf0;
+    color: #fff;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo h1 {
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.seccion-turnos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.seccion-turnos .tipo-documento {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.seccion-turnos .tipo-documento button {
+    margin: 20px auto;
+}
+
+.seccion-turnos .tipo-documento select {
+    outline: rgba(0, 0,0,0);
+    padding: 15px 20px;
+    background: #ff0000;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0, .5);
+    -webkit-appearance: button;
+    position: relative;
+    transition: 500ms;
+}
+
+.seccion-turnos .tipo-documento select:hover {
+    opacity: 0.8;
+}
+
+.seccion-turnos .escribir-documento {
+    width: 50%;
+}
+
+.seccion-turnos .tipo-documento select option {
+    outline: rgba(0, 0,0,0);
+}
+
+.seccion-turnos .escribir-documento .ingresar-doc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;    
+}
+
+.seccion-turnos .escribir-documento .input-text {
+    width: 95%;
+    padding: 20px 0;
+}
+
+.seccion-turnos .escribir-documento .input-text input[type="text"]{
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 30px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.seccion-turnos .escribir-documento .ingresar-doc input[type="button"], 
+.seccion-turnos .escribir-documento .ingresar-doc input[type="submit"] {
+    width: 30%;
+    height: 80px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0,0,0, .5);
+    margin: 5px 5px;
+    transition: 500ms;
+}
+
+.seccion-turnos .escribir-documento .ingresar-doc input[type="button"]:active {
+    background: #fff;
+}
+
+.seccion-turnos .escribir-documento .ingresar-doc input[type="button"]:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+
+.titulo h2 {
+    font-size: 40px;
+}
+
+.tipo_cliente {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.tipo_cliente .cliente {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 30px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.tipo_cliente .cliente i {
+    font-size: 100px;
+}
+
+.cliente input[type="submit"] {
+    display: block;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.cliente i {
+    font-size: 30px;
+}
+
+.xd {
+    font-size: 30px;
+}
+
+.imprimir {
+    width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+.imprimir .turno {
+    font-size: 30px;
+}
+
+.imprimir h2 {
+    margin-bottom: 15px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
